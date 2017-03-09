@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: htmlhead" th:with="title='About'"></head>
+
+<body>
+<div th:replace="layout :: navbar">(navbar)</div>
+
+<div class="container">
+    <div class="starter-template">
+        <h1>Idea behind project.</h1>
+        <p>Calibration is essential part of operation of every device that need to be precise to give good result of work done. Very often due to wear of materials crashes and other factor operation of industrial robot is not precise enough. In industry one is not allowed to stop robot operation to check correctness of calibration, therefore online measurement is required.
+            In this work system capable of measurement of actual joint velocity and position and comparing it with data from robot. Such measurement will be possible to perform at any moment of operation of robot and result will give operator information if robot is working correctly.
+        </p>
+    </div>
+</div>
+
+<div th:include="layout :: footer" id="footer">(footer)</div>
+
+</body>
+</html>
