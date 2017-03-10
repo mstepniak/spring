@@ -25,4 +25,31 @@ public class Greeting {
     }
 
     private String content;
+
+    public int getFirstNumber() {
+        return firstNumber;
+    }
+
+    public void setFirstNumber(int firstNumber) {
+        this.firstNumber = firstNumber;
+    }
+
+    private int firstNumber;
+
+    public int getSecondNumber() {
+        return secondNumber;
+    }
+
+    public void setSecondNumber(int secondNumber) {
+        this.secondNumber = secondNumber;
+    }
+
+    private int secondNumber;
+
+    public int getResult() {
+        result = firstNumber + secondNumber;
+        return result;
+    }
+
+    private int result;
 }
