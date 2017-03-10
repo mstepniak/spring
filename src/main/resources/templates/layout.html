@@ -9,7 +9,7 @@
 
   <title th:text="${title}">(title)</title>
 
-  <link th:href="@{/webjars/bootstrap/3.0.3/css/bootstrap.css}" rel="stylesheet"></link>
+  <link th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap.css}" rel="stylesheet"></link>
   <link th:href="@{/css/starter.css}" rel="stylesheet"></link>
 </head>
 
@@ -23,13 +23,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">ISW</a>
+      <a class="navbar-brand" href="/">ISW</a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Measurement</a></li>
+        <li class="active"><a href="/">Home</a></li>
+        <!--<li><a href="#about">About</a></li>
+        <li><a href="#contact">Measurement</a></li>-->
       </ul>
     </div>
   </div>
@@ -42,13 +42,15 @@
   </div>
 </div>
 
-<div th:fragment="footer" id="footer">
-  <div class="container">
-    <p class="muted credit">Institut für Steuerungstechnik der Werkzeugmaschinen und Fertigungseinrichtungen</p>
+<div th:fragment="footer" id="footer" class="navbar-fixed-bottom">
+  <div class = "navbar-fixed-bottom">
+    <div class="container">
+      <p class="muted credit">Institut für Steuerungstechnik der Werkzeugmaschinen und Fertigungseinrichtungen</p>
+    </div>
   </div>
-  <script th:src="@{/webjars/jquery/2.0.3/jquery.min.js}"></script>
-  <script th:src="@{/webjars/bootstrap/3.0.3/js/bootstrap.min.js}"></script>
 </div>
 
+<script th:src="@{/webjars/jquery/2.0.3/jquery.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/3.2.0/js/bootstrap.min.js}"></script>
 </body>
 </html>
